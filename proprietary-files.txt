@@ -1,3 +1,26 @@
+# Radio
+bin/netmgrd:vendor/bin/netmgrd
+bin/qmuxd:vendor/bin/qmuxd
+bin/radish:vendor/bin/radish
+etc/data/netmgr_config.xml|fb65247a5c492d7152a36bf4fb381804649dd384
+etc/data/qmi_config.xml|af9655ffd4c108d4061a79aadf620b9b44f24f26
+lib64/libfloatingfeature.so
+lib64/libsec-ril.so|4998b35a903ad972527d578ed6df7040698f5c92
+lib/libfloatingfeature.so
+lib/libsec-ril.so
+vendor/lib64/libcneapiclient.so|2cad1813fcf903b1aa45b33f4997b1c495925367
+vendor/lib64/libconfigdb.so
+vendor/lib64/libnetmgr.so
+vendor/lib64/libprotobuf-cpp-N.so|3f29ae846766006db33cf5186a08eb8b22823eba
+vendor/lib64/libril-qcril-hook-oem.so
+vendor/lib64/libsystem_health_mon.so
+vendor/lib64/libxml.so
+vendor/lib/libconfigdb.so
+vendor/lib/libnetmgr.so
+vendor/lib/libril-qcril-hook-oem.so
+vendor/lib/libsystem_health_mon.so
+vendor/lib/libxml.so
+
 # Sensors
 lib64/hw/sensors.msm8952.so
 vendor/lib64/libsensor1.so

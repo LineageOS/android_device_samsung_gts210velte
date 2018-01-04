@@ -20,10 +20,24 @@ $(call inherit-product-if-exists, vendor/samsung/gts210velte/gts210velte-vendor.
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+
 # Audio configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/mixer_paths_wcd9330.xml:system/etc/mixer_paths_wcd9330.xml
+
+# Device init scripts
+PRODUCT_PACKAGES += \
+    init.target.rc
+
+# Radio
+PRODUCT_PACKAGES += \
+    librmnetctl \
+    libshims_rild_socket
 
 # Vibrator
 PRODUCT_PACKAGES += \
