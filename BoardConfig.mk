@@ -16,19 +16,19 @@
 # inherit from common msm8976-common
 -include device/samsung/msm8976-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/gts210vewifi
+DEVICE_PATH := device/samsung/gts210velte
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := gts210vewifi
+TARGET_OTA_ASSERT_DEVICE := gts210velte
 
 # Board
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # Kernel
-TARGET_KERNEL_CONFIG := gts210vewifi_defconfig
+TARGET_KERNEL_CONFIG := gts210velte_defconfig
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
--include vendor/samsung/gts210vewifi/BoardConfigVendor.mk
+-include vendor/samsung/gts210velte/BoardConfigVendor.mk

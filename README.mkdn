@@ -1,4 +1,4 @@
-Device Tree for Samsung Galaxy Tab S2 9.7 (gts210vewifi)
+Device Tree for Samsung Galaxy Tab S2 9.7 LTE (gts210velte)
 ===========================================
 
 Basic   | Spec Sheet
