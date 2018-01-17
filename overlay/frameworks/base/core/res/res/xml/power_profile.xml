@@ -10,7 +10,13 @@
     <item name="wifi.scan">408.9</item>
     <item name="dsp.audio">41.9</item>
     <item name="dsp.video">195</item>
+    <item name="radio.active">199</item>
+    <item name="radio.scanning">140</item>
     <item name="gps.on">55</item>
+    <array name="radio.on">
+        <value>2.09</value>
+        <value>2.09</value>
+    </array>
     <array name="cpu.clusters.cores">
         <value>4</value>
         <value>4</value>
