@@ -21,9 +21,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from gts210velte device
 $(call inherit-product, device/samsung/gts210velte/device.mk)
 
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gts210velte
-PRODUCT_NAME := full_gts210velte
+PRODUCT_NAME := lineage_gts210velte
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := gts210velte
+PRODUCT_MODEL := SM-T819
 PRODUCT_MANUFACTURER := samsung
+
+PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+# Use the latest approved GMS identifiers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=gts210veltexx \
+    PRIVATE_BUILD_DESC="gts210veltexx-user 7.0 NRD90M T819XXU2BRB2 release-keys"
+
+BUILD_FINGERPRINT := "samsung/gts210veltexx/gts210velte:7.0/NRD90M/T819XXU2BRB2:user/release-keys"
