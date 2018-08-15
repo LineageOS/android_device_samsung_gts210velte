@@ -27,6 +27,9 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Display
+SF_PRIMARY_DISPLAY_ORIENTATION := 270
+
 # Kernel
 TARGET_KERNEL_CONFIG := gts210velte_defconfig
 
