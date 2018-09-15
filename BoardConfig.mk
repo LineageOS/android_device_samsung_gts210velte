@@ -21,9 +21,6 @@ DEVICE_PATH := device/samsung/gts210velte
 # Assert
 TARGET_OTA_ASSERT_DEVICE := gts210velte
 
-# Board
-TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
